@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+  }
+  .puzzlegame {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+  .grid {
+    display: grid;
+    width: 26em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 6em;
+    border: 6px solid rgb(0, 26, 255);
+
+  }
+  .imagefull {
+    width: 25em;
+    height: 25em;
+  }
+  .image-grid {
+    border: 1px solid #ffffff;
+  }
+  .screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.719) ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  p{
+    padding-left: 3px;
+    font-size: 20px;
+    
+  }
+
+  #timer{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+  .rank{
+    background-color: #ffffffcc;
+    width: 400px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-left: 800px;
+  }
+
+  #ranki{
+    padding-left: 50px;
+    color: rgb(138, 10, 10);
+  }
+
+  #puzzleButton {
+    font-size: 1.2em;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    margin-top: 300px;
+    color: white;
+    background-color: darkblue;
+  }
+
+  #puzzleButton:hover {
+    font-size: 1.8em;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    margin-top: 300px;
+    color: white;
+    background-color: rgb(70, 70, 184);
+  }
+
+
+  #moves {
+    position: relative;
+    margin: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .hide {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .puzzlegame {
+      flex-direction: column;
+    }
+    .grid {
+      width: 15em;
+      height: 15em;
+      grid-auto-rows: 3.5em;
+    }
+    .imagefull {
+      width: 180px;
+    }
+    .screen{
+      font-size: 20px;
+    }
+    .rank{
+      background-color: #ffffffcc;
+
+      padding-top: 5px;
+      padding-left:5px;
+      margin-left: 1px;
+    }
+  
+    #ranki{
+      padding-left: 50px;
+      color: rgb(138, 10, 10);
+      font-size: 25px;
+    }
+  }
